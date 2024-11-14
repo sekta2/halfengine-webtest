@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>HalfEngine Test 0.3.3</title>
+	<title>HalfEngine 0.3.4</title>
 	<style type="text/css">
 html, body
 {
@@ -63,7 +63,7 @@ html, body
 </head>
 <body>
 <div id="wrapper">
-	<h1 id="title">HalfEngine Test 0.3.3</h1>
+	<h1 id="title">HalfEngine 0.3.4</h1>
 	<div id="main">
 		<center><canvas id="canvas" width="800" height="600" style="max-width:100%;background:#000;vertical-align:middle"></canvas></center>
 	</div>
@@ -110,7 +110,7 @@ var DoLoad = function()
 {
 	Msg(TXT.LOAD);
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', 'halfengine_test.js');
+	xhr.open('GET', 'index.js');
 	xhr.onprogress = function(e)
 	{
 		if (!e.lengthComputable || ctx.pCnt++ < 5) return;
